@@ -1,0 +1,20 @@
+; Engine configuration file.
+; Twin of the live VESPER baker in src/game/godotBake.ts
+; Open in Godot 4.3+ or run:
+;   godot --headless -s res://scripts/baker.gd
+
+config_version=5
+
+[application]
+
+config/name="VESPER Hollow Meridian"
+config/description="Godot FastNoiseLite baker fused with Imagine albedo plates for the drowned observatory."
+run/main_scene="res://scenes/baker.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=2
+lights_and_shadows/use_physical_light_units=true
