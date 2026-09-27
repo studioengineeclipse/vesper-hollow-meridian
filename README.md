@@ -1,30 +1,26 @@
-# VESPER — The Hollow Meridian
+# VESPER — B1μ Generative Reality Engine
 
-First-person drowned baroque observatory.
-
-**Imagine writes albedo plates. Godot generates live wear, wetness, and water normals. The game rasterizes them at 60fps.**
+One causal loop. Not four apps, and not a chat model pretending to draw every frame.
 
 ```
-Imagine plates  +  Godot FastNoiseLite  =  PBR on marble, walnut, limestone, water
+B1μ decides
+  → Grok atelier paints one plate
+  → Procedura compiles mated parts
+  → the playable world embodies them
+  → B1μ keeps the receipt
+  → loop
 ```
 
-## Fusion (what is actually possible)
-
-Godot cannot be the browser rasterizer in this workspace. Godot **can** generate images. That is the connection:
-
-| Layer | Where | Role |
+| Piece | Owns | Does not own |
 |---|---|---|
-| Albedo | Grok Imagine → `public/textures/*.jpg` | Photographed stone, wood, metal, dusk sky |
-| Image generator | Godot 4 `godot/vesper/scripts/baker.gd` and twin `src/game/godotBake.ts` | FastNoiseLite FBM + domain warp |
-| Live water | `GodotLive.tick` every 50ms | Scrolling normal maps |
-| Rasterizer | Three.js WebGL | First-person courtyard, palace wings, crypt |
+| B1μ | intent, zone, authority, receipts | pixels |
+| Grok atelier | a unique worn plate per prop, from palace DNA | the 60fps view |
+| Procedura | named parts joined by socket mates, scale check | gameplay |
+| Godot 4.5 | FastNoiseLite plates + the intent file, headless | the first-person rasterizer |
+| Playable world | scene, physics, camera, the object you can walk up to | the decision to exist |
 
-Press **G** in-game to pause/resume the live baker. HUD shows `godot live`.
+Godot ran in this workspace and wrote `public/textures/godot/*.png` and `public/gre/intent.json`.
 
-## Godot baker (optional local)
+While you walk, a new object may appear every few seconds (cap 8). Entering play rebuilds one object before you move. **G** pauses the forge.
 
-Open `godot/vesper` in Godot 4.3+ or:
-
-```bash
-godot --headless --path godot/vesper -s res://scripts/baker.gd
-```
+Assemblies: reliquary, chart stand, candelabrum, mask plinth. Crypt, library, chart room, and instrument hall pick their own.
